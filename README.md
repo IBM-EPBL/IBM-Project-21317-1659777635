@@ -1,13 +1,14 @@
 # IBM-Project-21317-1659777635
-## **PROJECT TITLE** : _Real-Time Communication System Powered by AI for Specially Abled_
+### **PROJECT TITLE** :
+### _Real-Time Communication System Powered by AI for Specially Abled_
 <hr>
 
 ### TEAM ID : PNT2022TMID22290
 #### TEAM DETAILS :
-**TEAM LEADER** &nbsp;&nbsp;- Devanand M<br>
-**TEAM MEMBER** - Dhinesh M<br>
-**TEAM MEMBER** - Komesh S<br>
-**TEAM MEMBER** - Veluru Balaji<br>
+**TEAM LEADER** &nbsp;&nbsp;- _Devanand M_<br>
+**TEAM MEMBER** - _Dhinesh M_<br>
+**TEAM MEMBER** - _Komesh S_<br>
+**TEAM MEMBER** - _Veluru Balaji_<br>
 
 <hr>
 
