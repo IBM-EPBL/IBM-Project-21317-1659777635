@@ -1,0 +1,61 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    /* font-family: sans-serif; */
+}
+
+.navbar{
+    background-color: rgb(6, 137, 245);
+}
+
+.navbar-header{
+    color: antiquewhite;
+    margin-left: 10px;
+}
+
+/* .navigation{
+    margin: 20px;
+} */
+
+.header-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-right: 40px;
+    justify-content: space-around;
+}
+
+.header-list-elements{
+    color: antiquewhite;
+    font-size: 18px;
+    margin: 0px 20px 0px 20px;
+    font-size: 20px;
+}
+
+.link-tag{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.container{
+    width: 500px !important;
+    /* padding-top: 5px; */
+    /* padding-bottom: 10px;*/
+    background-color: aliceblue;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.signup-header{
+    text-align: center;
+    margin: 30px 0px 40px 0px;
+}
+
+.submit-btn{
+    width: 80px !important;
+    margin-left: 200px;
+}
+
+
