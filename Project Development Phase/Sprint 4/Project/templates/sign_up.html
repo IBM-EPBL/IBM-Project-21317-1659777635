@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/872673ab28.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/index.css">
+    <link rel="stylesheet" href="../static/signup.css">
+    <link rel="shortcut icon" href="../static/img/favicon_1.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="nav_head" style="background: rgba(255,255,255,0.8) ;" >
+        <div class="nav_title"><h1 style="font-weight: 600; margin-top:25px; " >Realtime Communication System</h1></div>
+        <div class="icons">
+            <ul class="header-list">
+                <!-- <li class="header-list-elements"><a class="link-tag" id="profile_page" href='profile'>Profile</a></li> -->
+                <!-- <li class="header-list-elements"><a class="link-tag" href="/about">About</a></li> -->
+                <!-- <li class="header-list-elements"><a class="link-tag" href="/">Home</a></li> -->
+                <li class="header-list-elements"><a class="link-tag" href="https://github.com/IBM-EPBL/IBM-Project-21317-1659777635" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            </ul>        
+        </div>
+    </div>
+
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-5 col-md-8 mx-auto shadow rounded-5">
+                <h2 class="text-center fw-bold mb-3">Sign up</h2>
+                <form name="google-sheet">
+                    <div id="form_alerts"></div>
+                    <div class="form-group mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="inputRole" class="form-label">Role</label>
+                        <!-- <textarea id="message" name="message" class="form-control" placeholder="Enter your message" rows="5" required></textarea> -->
+                        <select class="form-select" id="inputRole" name="inputRole" aria-label="Default select example">
+                            <option selected>Select</option>
+                            <option value="Software Engineer">Software Engineer</option>>
+                            <option value="Student">Student</option>>
+                            <option value="Teacher">Teacher</option>>
+                        </select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="inputDisability" class="form-label">Disability</label>
+                        <!-- <textarea id="message" name="message" class="form-control" placeholder="Enter your message" rows="5" required></textarea> -->
+                        <select class="form-select" id="inputDisability" name="inputDisability" aria-label="Default select example">
+                            <option value="">Select</option>>
+                            <option value="Deaf">Deaf</option>>
+                            <option value="Dumb">Dumb</option>>
+                            <option value="Normal">Normal</option>>
+                        </select>
+                    </div>
+                    <div style="text-align:center ;" >
+                        <button class="an" type="submit">Sign up</button><br>
+                        Already a member? <a href="/">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        
+
+        const scriptURL = "aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J6M1dYSHlUSV95eXNvc1pOQm1ITnpZbVZnMWNaNHBib08zS0t1Nkx1OHdPUHpSeTJ3b21BQVlKSVBpbEtkdWI2b0gvZXhlYw==";
+        const form = document.forms['google-sheet']
+        
+        function send(){
+            fetch(atob(scriptURL), { method: 'POST', body: new FormData(form)})
+            .then(response => $("#form_alerts").html("<div class='alert alert-success'>Sign up successfully.</div>"))
+            .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Details not sent.</div>"))
+        }
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(atob(scriptURL))
+            .then((response) => {
+                return response.json()
+            })
+            .then((data) => {
+                var ok = 0;
+                const inputEmail= document.querySelector('#email').value;
+                const inputPassword = document.querySelector("#password").value;
+                for(var i=1;i<data.length;i++)
+                {
+                    if(data[i][1] == inputEmail)
+                    {
+                        ok=0;
+                        if(true)
+                        {
+                            $("#form_alerts").html("<div class='alert alert-danger'>Mail id already exist.</div>");
+                            break;
+                        }
+                    }
+                    else{
+                        console.log("Failure");
+                        console.log(inputEmail);
+                        ok=1;
+                    }
+                    }
+
+                if(ok==1){
+                    $("#form_alerts").html("<div class='alert alert-success'>Sign up successfully</div>");
+                    console.log("Failure - Final");
+                    send();
+                    setInterval(function(){
+                        window.location.href = "/";
+                    }, 1000);
+                }
+                    
+            })
+        })
+    </script>
+
+    
+    <footer>
+        <p id="copyrights" style="color: #fff; font-size:20px; text-align:center;"></p>
+    </footer>
+    <script>
+        const d = new Date();
+        document.getElementById("copyrights").innerHTML ="Copyright © "+ d.getFullYear();
+    </script>
+</body>
+</html>
