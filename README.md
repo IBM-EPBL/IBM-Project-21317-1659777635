@@ -1,6 +1,7 @@
 # IBM-Project-21317-1659777635
 ### **PROJECT TITLE** :
 ### _Real-Time Communication System Powered by AI for Specially Abled_
+<img src="https://drive.google.com/file/d/1tkw5Rm8NTcfnLwVKVX7WjLRSzuXa3qOI/view?usp=share_link">
 <hr>
 
 ### TEAM ID : PNT2022TMID22290
