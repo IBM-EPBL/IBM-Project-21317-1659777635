@@ -28,7 +28,7 @@
 ### 💿 INSTALLATION :
 #### To install required libraries :
 ```ps
-python pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 #### To run the flask app :
 ```ps
