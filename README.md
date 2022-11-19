@@ -66,7 +66,7 @@ python app.py
 #### Empathy Map : <a href="./Project Design & Planning/Ideation Phase/Empathy Map/Empathy Map.png" >Link</a>
 #### Ideation-Brain Strom : <a href="./Project Design & Planning/Ideation Phase/Ideation/Ideation-BrainStrom.png" >Link</a>
 #### Literature Survey : <a href="./Project Design & Planning/Ideation Phase/Literature Survey/LITERATURE-SURVEY.pdf">Link</a>
-#### Problem Statement : <a href="./Project Design & Planning/Ideation Phase/Problem Statement/Problem Statement.pd" >Link</a>
+#### Problem Statement : <a href="./Project Design & Planning/Ideation Phase/Problem Statement/Problem Statement.pdf" >Link</a>
 ### 🎯 PROJECT DESIGN PHASE - I
 #### Problem Solution Architecture : <a href="./Project Design & Planning/Project Design Phase - I/Problem Solution Architecture.pdf">Link</a>
 #### Problem Solution Fit : <a href=".//Project Design & Planning/Project Design Phase - I/Problem solution fit.png">Link</a>
