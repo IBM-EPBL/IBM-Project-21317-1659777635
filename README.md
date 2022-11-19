@@ -45,7 +45,7 @@ python app.py
 #### Demo Video : <a href="https://youtu.be/J19nWqDMQr8">Link</a>
 
 ### 🎖️ FINAL DELIVERABLES : 
-#### <a href="/Final Deliverables/">Link to Final Deliverables</a>
+#### <a href="./Final Deliverables/">Link to Final Deliverables</a>
 
 <hr>
 
@@ -85,5 +85,6 @@ python app.py
 #### Sprint-II : <a href="./Project Development Phase/Sprint 2/">Link</a>
 #### Sprint-III : <a href="./Project Development Phase/Sprint 3/">Link</a>
 #### Sprint-IV : <a href="./Project Development Phase/Sprint 4/">Link</a>
-### 🎯 PRE-REQUISITIES <a href="/Pre-Requisites and Project structure/">Link</a>
+#### Performance Testing : <a href="./Project Development Phase/Preformance Testing/Performance Testing - Artificial Intelligence.pdf" >Link</a>
+### 🎯 PRE-REQUISITIES <a href="./Pre-Requisites and Project structure/">Link</a>
 <hr>
